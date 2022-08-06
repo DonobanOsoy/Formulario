@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD DE CALSES</title>
+
+
+
+
+    <style> 
+        .row2cols{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .row2cols label{
+            background-color:azure;    
+            color: black;
+            padding: 10px;
+            text-align: right;
+        }
+        .row2cols input,
+        .row2cols textarea{
+            background-color: azure;
+        }
+        input[type="submit"],
+        input[type="reset"]
+       {
+            background-color: darkblue;
+            color: white;
+            font-size: 50px;
+            padding: 5px;
+        }
+        body legend{
+        text-align: center;
+            }
+        /*media queri*/
+        @media screen and (max-width:600px) {
+                .row2cols{
+                    grid-template-columns: 1fr;
+                }
+                .row2cols label{
+                text-align: center;
+            }
+        }
+
+        header nav{
+            
+            background-color: black; 
+            
+            
+        }
+        nav a {
+            color: white;
+        }
+        nav a:hover{
+        
+        color: red;
+        }
+      
+       
+
+</style>
+
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Actividad de Clases</h1>
+            
+        <nav>
+                <ul>    
+                    <li><a href="../index.html">INICIO</a></li>
+                </ul>
+            
+        </nav>
+            
+    </header>
+    <fieldset>
+        
+    <form action="">
+        
+        <legend>DATOS PERSONALES</legend>
+            <div  class="row2cols">
+                <label for="number">Documento de Identificacion</label>
+               <input type="number" 
+                      id="number" 
+                      name="id"
+                      placeholder="Numero de DPI Valido."
+                      required>
+            </div>
+  
+            <div class="row2cols">
+                <label for="nombre">Nombre</label>
+                <input type="text" 
+                id="nombre" 
+                name="nombre"
+                placeholder="Nombre Completo.."
+                required>
+            </div>
+
+            <div class="row2cols">
+                <label for="nombre">Dirección</label>
+                <input type="text" 
+                id="nombre" 
+                name="nombre"
+                placeholder="Direccion Actual."
+                required>
+            </div>
+            <div class="row2cols">
+                <label for="País">País</label>
+                <input type="text" 
+                id="nombre" 
+                name="nombre"
+                placeholder="Nombre de tu País"
+                required>
+            </div>
+
+            <div class="row2cols">
+                <label for="email">E-mail</label>
+                <input type="email"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Solo Direcciones Validas"
+                        required>
+            </div>
+ 
+            <div class="row2cols">
+                <label for="mensaje">Opiniones</label>
+                <textarea name="mensaje" 
+                           id="mensaje" 
+                           rows="10"
+                           minlength="25"
+                           required>
+                           
+                </textarea>
+            </div>
+
+            <div></div>
+            <div></div>
+            <form action="">
+
+                <legend>DATOS LABORALES</legend>
+
+                <div class="row2cols">
+                    <label for="nombre">Empresa</label>
+                    <input type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    placeholder="Nombre de Empresa"
+                    required>
+                </div>
+                <div class="row2cols">
+                    <label for="number">Salario Ordinario</label>
+                    <input type="number" 
+                    id="numbrer" 
+                    nombre="number"
+                    placeholder="Salario debengado"
+                    required>
+                </div>
+                <div class="row2cols">
+                    <label for="number">Bonificacion</label>
+                    <input type="number" 
+                    id="numbrer" 
+                    nombre="number"
+                    placeholder="Bonificaciones de Ley"
+                    required>
+                </div>
+
+                <div class="row2cols">
+                    <label for="number">Otras Bonificaciones</label>
+                    <input type="number" 
+                    id="numbrer" 
+                    nombre="number"
+                    placeholder="."
+                    required>
+                </div>
+                
+                <div class="row2cols">
+                    <div>
+    
+                    </div>
+                  
+                    <div>
+                        <input type="submit" value="Enviar Datos">
+                    
+                    </div>
+                    
+                </div>
+                    
+               
+            </form>
+            
+    </form>
+    </fieldset>    
+    
+</body>
+</html>
